@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JavaScript Arrays</h2>
+    <p id="demo"></p>
+
+    <p id="myJoin"></p>
+    <p id="myFirstPop"></p>
+    <p id="mySecondPop"></p>
+
+    <script>
+      var code = ["Python", "CSS", "C++", "Javascript", "HTML"];
+
+      document.getElementById("demo").innerHTML = code[2];
+
+      for (i = 0; i < code.length; i++) {
+        document.write(`${i + 1}. ${code[i]}<br>`);
+      }
+
+      document.getElementById("myJoin").innerHTML = code.join("  •  ");
+
+      code.pop();
+      document.getElementById("myFirstPop").innerHTML = code.join("  •  ");
+
+      code.pop();
+      document.getElementById("mySecondPop").innerHTML = code.join("  •  ");
+    </script>
+  </body>
+</html>

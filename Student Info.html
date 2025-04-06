@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: Tahoma;
+        color: #f2974b;
+        background-color: #474544;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="font-family: Impact">Student Info</h1>
+
+    <p id="name"></p>
+
+    <script>
+      var student = {
+        name: "Anaya",
+        age: 13,
+        grade: 8,
+        hobby: "Playing, Sketching, Reading & Irritating my sister",
+        favSport: "Basketball & Volleyball",
+      };
+
+      document.write(`
+                    Student's Name : ${student.name} <br>
+                    Students's Favourite Sports : ${student.favSport} <br>
+                    Student's Age : ${student.age} <br>
+                    Student's Class : Grade ${student.grade} <br>
+                    Student's Hobbies : ${student.hobby}
+                `);
+
+      document.write("<br><br><br>");
+
+      var playerName = [
+        "Stephen Curry",
+        "LeBron James",
+        "Michael Jordan",
+        "Kobe Bryant",
+      ];
+
+      for (i = 0; i < playerName.length; i++) {
+        document.write(`${i + 1}. ${playerName[i]}<br>`);
+      }
+
+      document.getElementById("name").innerHTML = playerName.join("  •  ");
+    </script>
+  </body>
+</html>
